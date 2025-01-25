@@ -12,7 +12,7 @@ import Products from "../pack/Products"
 const Home = () => {
   return (
     <div className="">
-      <div className="bg-hero bg-cover ">
+      <div className=" bg-cover " style={{backgroundImage:"linear-gradient(rgba(0, 0, 0, 0.447),rgba(0, 0, 0, 0.487)), url('blog (2).jpg')"}}>
         <Nav/>
         <Hero/>
       </div>
