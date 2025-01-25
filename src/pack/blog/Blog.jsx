@@ -2,7 +2,7 @@ import { blog } from "../object/objects"
 
 const Blog = () => {
   return (
-    <div className="my-8 px-[2%]">
+    <div className="my-8 px-[2%] ">
       <div className="text-center my-8">
         <h2 className="text-[30px] font-bold uppercase">From the blog</h2>
         <p className="text-[14px] text-p">learn how to grow your business with our expert advice</p>
@@ -13,8 +13,8 @@ const Blog = () => {
           blog.map((item, index)=>{
 
             return(
-              <div key={index} className="shadow p-2 rounded">
-                <img src={item.link} alt="" className="rounded-xl hover:scale-[1.1] transition-all"/>
+              <div key={index} className="cursor-pointer p-2 rounded hover:scale-[1.1] transition-all">
+                <img src={item.link} alt="" className="rounded-xl "/>
                 <div className="text-[13px] flex gap-4 text-p my-2">
                   <span className="">{item.date}</span>
                   <span className="">{item.type}</span>

@@ -1,18 +1,18 @@
 import { BiChat, BiGroup, BiMailSend, BiUserCircle } from "react-icons/bi"
 import { moregrid } from "../object/objects"
 import { useSelector } from "react-redux"
-
+import "../../App.css"
 const SomeGrid = () => {
   const myvalue = useSelector(state=>state.boolean.boolean)
   return (
     <div className="my-16">
-      <div className="px-[2%]">
+      <div className="">
         <div className="border-b-[2px] border-border mb-8 pb-4">
-          <h2 className="text-[25px] font-bold">Resources</h2>
+          <h2 className="text-[#635bff] font-bold font-[popbold] uppercase">Resources</h2>
         </div>
       </div>
 
-      <div className="grid grid-cols-4 gap-4 px-[2%] mb-8">
+      <div className="grid grid-cols-4 gap-4 mb-8">
         {
           moregrid.map((item, index)=>{
 

@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily:{
+        "pop":"url(`./public/font`)"
+      }
+      ,
       keyframes:{
         "spinn":{
           "0%":{transform: "rotate(0)"},
@@ -16,6 +20,35 @@ export default {
           "50%":{scale: "2"},
           "100%":{scale:"0.5"}
         },
+        "from":{
+          "0%":{
+            transform: "translateX(100%)",
+            opacity: "0"
+          },
+          "50%":{
+            transform: "translateX(50%)",
+            opacity: "40%"
+          },
+          "100%":{
+            transform: "translateX(0%)",
+            opacity: "1"
+          }
+        },
+        "left":{
+          "0%":{
+            transform: "translateX(-100%)",
+            opacity: "0"
+          },
+          "50%":{
+            transform: "translateX(-50%)",
+            opacity: "40%"
+          },
+          "100%":{
+            transform: "translateX(0%)",
+            opacity: "1"
+          }
+        }
+        ,
         "render":{
           "0%":{
             scale:"0.5",
@@ -45,7 +78,9 @@ export default {
       animation:{
         'spinn': 'spinn 3s linear infinite',
         "brand": "brand 1s linear infinite pause",
-        "render":"render 4s ease-in-out infinite"
+        "render":"render 4s ease-in-out infinite",
+        "from":"from 3s ease-in-out 150ms",
+        "left":"left 3s ease-in-out 150ms"
       },
       backgroundImage:{
         "gradi": "radial-gradient(#2f3d30, #292f26, #222d2a)",

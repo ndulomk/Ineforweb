@@ -22,7 +22,7 @@ const Nav = () => {
   }
   console.log(showup)
   return (
-    <div className="px-[5%] py-4 text-white ">
+    <div className="px-[5%] py-4 text-white">
       <nav className="flex items-center justify-between ">
         <div className="flex items-center gap-8">
           <div className="text-[20px] font-bold">INEFOR</div>

@@ -1,5 +1,6 @@
 import { MdDone } from "react-icons/md"
 import { prod } from "../object/prod"
+import { useEffect, useRef } from "react"
 
 const Pricing = () => {
   const setCurrency = (amount)=>{
@@ -17,9 +18,24 @@ const Pricing = () => {
     
     return formattedValue
   }
-
+  const mine = useRef(null)
+  useEffect(()=>{
+    const boxes = document.querySelectorAll(".box")
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach((entry)=>{
+        if(entry.isIntersecting){
+          entry.target.classList.remove("hidden")
+          entry.target.classList.add("grid")
+        }
+      })
+    },
+  {threshold:0.5}
+  )
+  boxes.forEach((box)=>observer.observe(box))
+  // observer.observe(boxes);
+  }, [])
   return (
-    <div className="grid grid-cols-3 px-[2%] gap-4 my-16">
+    <div className="grid grid-cols-3 px-[2%] gap-4 my-16 box" ref={mine}>
       {
         prod.map((item, index)=>{
 
@@ -37,7 +53,7 @@ const Pricing = () => {
               <div>
                 {item.sub.map((item, index)=>{
                   return(
-                    <div key={index} className="flex items-center gap-2 my-2">
+                    <div key={index} className="flex items-center gap-2 my-2 " id="" >
                       <MdDone className="text-myColor"/>
                       <span className="text-p text-[13px]">{item}</span>
                     </div>

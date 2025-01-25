@@ -23,7 +23,7 @@ const Item = () => {
             <h1 className="font-bold text-[30px] uppercase">Simple no-tricks Pricing</h1>
             <p className="text-p text-[13px] px-32">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam reiciendis ratione quibusdam, corporis voluptatum earum culpa aliquid perspiciatis. Nihil, sint? Cum voluptatibus vel magnam totam sunt accusantium id ex. Laudantium.</p>
           </div>
-      <div className="border-border border-[2px] rounded-md p-6 flex">
+      <div className=" rounded-md p-6 flex">
         <div>
   
           <div>
@@ -68,8 +68,8 @@ const Item = () => {
           </div>
        
         </div>
-        <div className="bg-sidebar rounded shadow-lg border-border shadow-[#0000002d] text-center px-10 basis-[40%]">
-          <p className="text-p font-bold py-4">Pay Once, own the skill forever</p>
+        <div className=" rounded shadow-lg border-border shadow-[#0000002d] text-center px-10 basis-[40%]">
+          <p className="uppercase font-bold py-4">Pay Once, own the skill forever</p>
           <div>
             <span className="text-[30px] font-bold">{setCurrency(100000)}</span>
             <span className="font-bold text-p">/KZ</span>

@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react"
-
+import "../../App.css"
 
 const Dashabout = () => {
   const counter = useRef(null)
@@ -26,25 +26,29 @@ const Dashabout = () => {
     })
   },[])
   return (
-    <div className="px-[2%] text-center my-16">
-      <div>
-        <p className=" font-bold">INEFOR</p>
-        <h2 className="text-[40px] font-bold uppercase text-text">We have the base for show you the way</h2>
-        <p className="text-p text-[14px] px-32">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit doloribus neque quam unde, modi esse! Quo voluptatum repellendus vel voluptas ratione quidem, dicta tempora consequatur rerum! Iste, suscipit consequatur. Asperiores!</p>
+    <div className=" bg-[#0a2540] text-white my-16 font-[poppins] h-[100vh] py-32 px-[5%]">
+      <div className="w-[400px]">
+        <p className="text-[#00d4ff] font-bold my-3">Escala nacional</p>
+        <h2 className="text-[30px] font-bold uppercase">The backbone for national commerce</h2>
+        <p className=" text-[13px] text-[#9599b0] my-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit doloribus neque quam unde, modi esse! Quo voluptatum repellendus vel voluptas ratione quidem, dicta tempora consequatur rerum! Iste, suscipit consequatur. Asperiores!</p>
       </div>
       <div>
-        <section className=" justify-between px-[20%] text-[50px] font-bold flex items-center my-10 text-myColor rounded-sm p-2">
+        <section className="grid grid-cols-4 gap-32 text-[40px] font-bold my-10">
           <div>
-            <div className="counter px-4" id='counter' ref={counter} data-target="10000">0</div>
-            <p className="text-[13px] text-p font-light">Students per year</p>
+            <div className="counter border-l-[4px] px-2 my-1 border-[#149bb6]" id='counter' ref={counter} data-target="10000">0</div>
+            <p className="text-[13px] font-light w-[200px]">Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
           </div>
           <div>
-            <div className="counter px-4" id='counter' ref={counter} data-target="100">0</div>
-            <p className="text-[13px] text-p font-light">Get the certificate</p>
+            <div className="counter border-l-[4px] px-2 my-1 border-[#149bb6]" id='counter' ref={counter} data-target="100">0</div>
+            <p className="text-[13px]  font-light">Get the certificate</p>
           </div>
           <div>
-            <div className="counter px-4" id='counter' ref={counter} data-target="1000">0</div>
-            <p className="text-[13px] text-p font-light">Is already hired</p>
+            <div className="counter border-l-[4px] px-2 my-1 border-[#149bb6]" id='counter' ref={counter} data-target="1000">0</div>
+            <p className="text-[13px]  font-light">Is already hired</p>
+          </div>
+          <div>
+            <div className="counter border-l-[4px] px-2 my-1 border-[#149bb6]" id='counter' ref={counter} data-target="1000">0</div>
+            <p className="text-[13px]  font-light">Is already hired</p>
           </div>
         </section>
       </div>
